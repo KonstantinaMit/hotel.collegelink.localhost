@@ -1,0 +1,535 @@
+/* GENERAL STYLE  ALL PAGES*/
+@font-face {
+  font-family: 'RobotoR';
+  src: url('fonts/Roboto-Regular.ttf');
+  font-weight:400;
+}
+@font-face {
+  font-family: 'RobotoL';
+  src: url('fonts/Roboto-Light.ttf');
+  font-weight:300;
+}
+*{
+	box-sizing: border-box;
+  }
+html,body,* {
+	  margin:0;
+	  padding:0;
+  }
+body {
+	 background:#fff;
+	 color:#4d4b4b;
+	 font-family:'RobotoL';
+	 font-weight: 300;
+	 width: 100%;
+}
+a {
+	color:#ff5500;
+	transition: all .3s ease;
+	text-decoration: none;
+}
+a:hover {
+	color: #f68b56;
+}
+/* GENERAL EFFECTS OF CUSTOM BUTTONS  */
+/* BUTTON EFFECT BOUNCE STYLE*/
+.bn53, .bn53:hover {
+  background-color: #ff5722;
+  animation: bn53bounce 4s infinite;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  width: 40%;
+  }
+  @keyframes bn53bounce {
+	5%,
+	50% {
+	  transform: scale(1);
+	}
+
+	10% {
+	  transform: scale(1);
+	}
+
+	15% {
+	  transform: scale(1);
+	}
+
+	20% {
+	  transform: scale(1) rotate(-5deg);
+	}
+
+	25% {
+	  transform: scale(1) rotate(5deg);
+	}
+
+	30% {
+	  transform: scale(1) rotate(-3deg);
+	}
+
+	35% {
+	  transform: scale(1) rotate(2deg);
+	}
+
+	40% {
+	  transform: scale(1) rotate(0);
+	}
+  }
+/* BTN STYLE */
+.btn {
+ background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%)
+}
+.btn {
+ text-align: center;
+ transition: 0.5s;
+ background-size: 200% auto;
+ color: white;
+ border-radius: 2px;
+ display: block;
+ border: 0px;
+ font-weight: 400;
+ box-shadow: 0px 0px 14px -7px #f09819;
+ margin: 10px auto;
+}
+.btn:hover {
+ background-position: right center;
+ color: #fff;
+ text-decoration: none;
+}
+.btn:active {
+ transform: scale(0.95);
+}
+
+
+/* NAVIGATION HEADER  ALL PAGES*/
+.navbar .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: #ff5500;
+}
+@media only screen and (min-width: 992px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 0.5em;
+  }
+  .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+    border-right: 1px dotted #000000;
+  }
+}
+nav.navbar.navbar-expand-lg {
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 14%);
+    background: #fff;
+    border-radius: 4px;
+
+}
+
+/* FOOTER ALL PAGES */
+	body > footer{
+	    background: #dbdbdb;
+	    border-top: 1px solid #888888;
+    	width: 100%;
+	    height: 50px;
+   
+
+    	}
+  body > footer p {
+	    color: #616161;
+	    font-size: 16px;
+	    text-align: center;
+	    margin: 0;
+	    padding: 12px 0;
+	 }
+
+/* LOGIN-REGISTER INDEX PAGES*/
+main{
+  padding: 150px 0 300px 0;
+}
+section.hero{
+	background:url("images/landing-background.jpg") center no-repeat;
+	background-size: cover;
+}
+form {
+	width: 100%;
+	padding: 20px 20px;
+	background: #fff;
+  max-width: 500px;
+	position: relative;
+	margin:auto;
+  border-radius: 10px;
+ }
+/* Effect of tittle hover */
+.home-title span{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+		text-align: center;
+    color: #ff5500;
+}
+.home-title span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+}
+
+.home-title span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.home-title span:nth-of-type(1)::before,
+.home-title span:nth-of-type(1)::after{
+    animation-delay: 1s;
+}
+
+.home-title span:nth-of-type(2)::before,
+.home-title span:nth-of-type(2)::after{
+    animation-delay: 1.5s;
+}
+
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+
+.form-floating>.form-control:not(:placeholder-shown){
+      padding-top: 2.45rem;
+}
+.action-Form_register_login{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* INDEX PAGE STYLE */
+.form-select{
+	padding: 10px;
+	color: #3a3535;
+  background-color: #e8e8e8 !important;
+	text-align: center;
+	height: 60px;
+	position: relative;
+}
+.form-control{
+	text-align: center;
+	height: 60px;
+}
+.form-group_home {
+    margin-left: -10px;
+    margin-right: -14px;
+  }
+.form-group{
+	margin: 10px 0px;
+}
+
+/* CALENDAR STYLE */
+.ui-widget-content {
+    border: 1px double #ff5500;
+    background: #ffff;
+	}
+	.ui-widget-header {
+    border: 1px solid #333;
+    background: url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+    background-color: #ff5500;
+    color: #333;
+    font-weight: bold;
+}
+
+/* GO TO TOP BUTTON  */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+}
+/* LIST OF ROOMS PAGE STYLE */
+.main-room{
+  padding: 70px 0 250px 0;
+}
+/* SIDEBAR STYLE */
+.box{
+	margin-top:50px;
+}
+.with-border-image {
+  border-style: solid;
+  border-width: 20px;
+  border-image: url("images/border-shadow.png");
+  border-image-slice: 60 30;
+	height: 100%;
+}
+.sticky-sidebar{
+	position: sticky;
+  top: 0;
+}
+@media only screen and (max-width: 768px) {
+	.sticky-sidebar{
+		position: unset;
+  }
+}
+/* CUSTOM SELECT STYLE */
+.custom-select {
+	 width: 100%;
+	 height: 50px;
+	 background: #f3f3f3;
+	 border: 1px solid #d2cfcf;
+	 border-radius: 3px;
+	 text-align: center;
+}
+
+/*  */
+
+/* STYLE OF EACH ROOM LIST PAGE */
+.text-right{
+	float: right;
+}
+.clear {
+	clear:both;
+}
+.title{
+	 padding-top: 5px;
+	 margin-top: 50px;
+   background: #ff5500;
+   color: #fff;
+   border-radius: 2px;
+   height: 40px;
+   font-family:'RobotoR';
+	 font-weight: 400;
+ }
+ .media{
+	 position: relative;
+   width: 100%;
+   overflow: hidden;
+ }
+ .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #ff550000;
+}
+.media:hover .overlay {
+  opacity: 1;
+}
+.icon {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.fa-camera:hover {
+  color: #fff;
+	transition: all 0.65s;
+	transform: rotateY(360deg);
+}
+.small_descreption{
+   border-left: 2px solid #ff5500;
+   padding-left: 10px;
+}
+small{
+  text-transform: uppercase;
+}
+.effect-title {
+border: none;
+text-transform: uppercase;
+display: inline-block;
+transition: all 0.3s ease 0s;
+margin-bottom: 0px;
+
+}
+.effect-title:hover {
+letter-spacing: 3px;
+background: none;
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.3s ease 0s;
+}
+.text-uppercase{
+	text-transform: uppercase;
+  line-height: 1;
+	margin-bottom: 20px;
+
+}
+.cost {
+	background: #9b9b9b;
+	color: #fff;
+	font-weight: 500;
+	height: 40px;
+	padding: 10px 0px;
+}
+@media only screen and (min-width: 576px) {
+	.cost,.count,.room,.check-out,.check-in{
+		font-size:12px;
+  }
+}
+@media only screen and (min-width: 992px) {
+	.cost,.count,.room,.check-out,.check-in{
+		font-size:14px;
+  }
+}
+.count,.room{
+	background: #f3f3f3;
+  height: 40px;
+  padding: 10px;
+}
+.room{
+	margin-left: -24px;
+  border-left: 1px dotted #333;
+}
+
+/* ROOM PAGE STYLE */
+.info {
+  padding: 10px;
+  background: #ff5500;
+  color: #fff;
+}
+.fa-star.checked {
+  color: orange;
+}
+/* HEART ICON */
+.favoriteForm{
+  padding: 0px 0px;
+  background:#ff5500;
+ 
+}
+button.btn.btn-success {
+  margin: 0px 0px;
+}
+li#fav {
+  list-style: none;
+}
+
+.image-container{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.extra{
+  border-left: 1px dotted white;
+}
+.room-description{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-left: 2px solid #ff5500;
+  padding-left: 5px;
+}
+
+.room-reviews,.add-review {
+  margin: 40px 0px;
+  border-left: 3px solid #ff5500;
+  padding-left: 5px;
+}
+div#search-results-container {
+  margin-bottom: 110px;
+}
+
+/*ADD REVIEW-STAR */
+form.reviewForm {
+  margin: 0px;
+  padding: 0px 15px;
+}
+.rating{
+	border: none;
+}
+
+.rating > input{
+	display: none;
+}
+
+.rating > label:before{
+	content: '\f005';
+	font-family: FontAwesome;
+	margin: 5px;
+	font-size: 1.5rem;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.rating > label{
+	color: #ddd;
+	cursor: pointer;
+  float:right;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover, 
+.rating:not(:checked) > label:hover ~ label{
+	color: #f19060;;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label{
+	color: #ff5500;;
+}
+
+#reviewField{
+  width:100%;
+} 
+
+/* MAP ROOM LOCATION */
+.map-container{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+#map {
+  height: 400px;
+  width: 100%;
+
+}
+
+/* PROFILE STYLES */
+.profile-title{
+   color:#ff5500;
+}
+
+.check-in,.check-out{
+  background: #f3f3f3;
+  height: 40px;
+  padding: 10px 0px;
+  font-size: 14px;
+}
+.check-out{
+  margin-left: -24px;
+  border-left: 1px dotted #333;
+}
+.thumbnail_room{
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+.my-heart-btn{
+  color: #ffa500;;
+  background-color: #ffffff00;
+  border: none;
+  font-size: 30px;
+}
